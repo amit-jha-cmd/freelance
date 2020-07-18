@@ -14,14 +14,15 @@ export class AppComponent  {
   
   websiteTraffic:zingchart.graphset = {
     type: 'line',
-    backgroundColor: "#FFC107",
+    // backgroundColor: "transparent",
+    gradientColor: "#43C6AC #F8FFAE",
     tooltip: {
       fontColor: "#333"
     },
     plot: {
       marker: {
-        backgroundColor: "#FFC107",
-        borderWidth: "2px"
+        backgroundColor: "gray",
+        borderWidth: "3px"
       },
       aspect: 'spline'
     },
@@ -29,13 +30,13 @@ export class AppComponent  {
       margin: "35 40 80 40",
     },
     scaleX: {
-      lineColor: "#ffd363",
+      lineColor: "black",
       tick: {
         lineColor: "none"
       },
       labels: ['Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat', 'Sun'],
       item: {
-        fontColor: "white",
+        fontColor: "black",
         rules: [
         ]
       },
@@ -44,21 +45,21 @@ export class AppComponent  {
       }
     },
     scaleY: {
-              offsetX: -15,
+      offsetX: -15,
       lineColor: "none",
       tick: {
         lineColor: "none"
       },
       item: {
-        fontColor: "white"
+        fontColor: "black"
       },
       guide: {
-        lineColor: "#ffd363"
+        lineColor: "gray"
       }
     },
     series: [{
       values: [500, 300, 400, 500, 200, 200, 300],
-      lineColor: "white",
+      lineColor: "black",
       lineWidth: "2px"
     }]
   };
@@ -100,7 +101,7 @@ export class AppComponent  {
       },
       ring: {
         offsetR: '10px',
-        gradientColors: "#e53935 #5e35b1 #2196f3",
+        gradientColors: "#36d1dc #5b86e5",
         gradientStops: '0.1 0.6 0.9',
         fillAngle: 180,
         borderRadius: 10,
